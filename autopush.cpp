@@ -1,9 +1,7 @@
 #include <iostream>
 #include <string>
-#include <unistd.h>
 #include <array>
 
-// Git push test again
 
 void execCommand(std::string cmd) {
     auto pipe = popen(cmd.c_str(), "r");
@@ -29,6 +27,22 @@ void execCommand(std::string cmd) {
 
     std::cout << result << std::endl;
 }
+
+
+/**
+ * How to use this program?
+ * You must first type "git init" under your project root,
+ * then try "git status" to check the repository init successfully.
+ * After that, use "git remote add origin 'repo'" to specify the repository on the github,
+ * and try to push to the repo one time. Then you can start your development.
+ * When you want to push the new content again, you can only execute the exe of this program.
+ * For example:
+ * ./autopush my commit
+ * Then the commit content will be the string following the './autopush'
+ * @param argc
+ * @param argv
+ * @return
+ */
 
 int main(int argc, char* argv[]) {
     std::string gitAdd = "git add .";

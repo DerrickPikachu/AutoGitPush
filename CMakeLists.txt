@@ -3,4 +3,4 @@ project(autoGitPush)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(autoGitPush test.cpp)
+add_executable(autoGitPush autopush.cpp)

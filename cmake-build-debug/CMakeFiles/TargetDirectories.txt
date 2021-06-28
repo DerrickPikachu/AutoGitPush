@@ -1,0 +1,3 @@
+/home/pikachin/CLionProjects/autoGitPush/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pikachin/CLionProjects/autoGitPush/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pikachin/CLionProjects/autoGitPush/cmake-build-debug/CMakeFiles/autoGitPush.dir

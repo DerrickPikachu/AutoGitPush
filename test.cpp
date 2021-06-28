@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <array>
 
+// Git push test
+
 void execCommand(std::string cmd) {
     auto pipe = popen(cmd.c_str(), "r");
     if (pipe == nullptr) {

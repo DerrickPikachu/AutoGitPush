@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <array>
 
-// Git push test
+// Git push test again
 
 void execCommand(std::string cmd) {
     auto pipe = popen(cmd.c_str(), "r");
@@ -50,6 +50,7 @@ int main(int argc, char* argv[]) {
     std::cout << commit << std::endl;
     execCommand(commit);
     std::cout << "-------------------" << std::endl;
+    execCommand(gitPush);
 
     return 0;
 }
